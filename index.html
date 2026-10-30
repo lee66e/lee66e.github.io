@@ -8,130 +8,148 @@
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             margin: 0;
-            background-color: #fafbfc;
-            color: #24292e;
+            background-color: #f8fafc;
+            color: #1e293b;
             display: flex;
             flex-direction: column;
             min-height: 100vh;
         }
+        header {
+            background: linear-gradient(135deg, #1e3a1e, #112211);
+            color: white;
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 4px solid #4caf50;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.6rem;
+            letter-spacing: 0.5px;
+            font-weight: 800;
+        }
+        header .subtitle {
+            font-size: 1.15rem;
+            margin-top: 8px;
+            margin-bottom: 0;
+            color: #94a3b8;
+        }
         .main-content {
             flex: 1;
-            max-width: 650px;
-            margin: 60px auto;
+            max-width: 700px;
+            margin: 40px auto;
             padding: 0 20px;
-            text-align: center;
-        }
-        h1 {
-            font-size: 2.6rem;
-            color: #1f4037;
-            margin-bottom: 5px;
-            letter-spacing: 0.5px;
-        }
-        .subtitle {
-            font-size: 1.2rem;
-            color: #586069;
-            margin-top: 0;
-            margin-bottom: 35px;
         }
         .bio-text {
             text-align: left;
-            margin-bottom: 40px;
-            background: #fff;
+            margin-bottom: 30px;
+            background: #ffffff;
             padding: 30px;
-            border-radius: 8px;
-            border: 1px solid #e1e4e8;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+        .location {
+            margin-top: 0;
+            font-weight: 600;
+            color: #2e7d32;
+            font-size: 1rem;
         }
         p {
             line-height: 1.7;
-            font-size: 1.1rem;
-            color: #2f363d;
+            font-size: 1.05rem;
+            color: #334155;
             margin: 14px 0;
         }
-        p:first-child {
-            margin-top: 0;
-            font-weight: 600;
-            color: #1f4037;
-        }
-        p:last-child {
+        .highlight-text {
             margin-bottom: 0;
-            border-top: 1px solid #f0f2f5;
+            border-top: 1px solid #e2e8f0;
             padding-top: 14px;
             font-style: italic;
-            color: #586069;
+            color: #64748b;
+            font-size: 1rem;
         }
         .services-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
             text-align: left;
-            margin-top: 30px;
         }
         .service-card {
             background: white;
-            border-radius: 8px;
-            padding: 25px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
-            border: 1px solid #e1e4e8;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
         .service-card h3 {
             margin-top: 0;
-            color: #1f4037;
+            color: #1e3a1e;
             font-size: 1.3rem;
             margin-bottom: 10px;
+            font-weight: 700;
         }
         .service-card p {
             font-size: 0.95rem;
-            color: #586069;
+            color: #64748b;
             line-height: 1.6;
-            margin: 0 0 15px 0;
-            font-weight: normal;
-            font-style: normal;
-            border: none;
-            padding: 0;
+            margin: 0 0 20px 0;
         }
-        .service-card a {
+        .btn {
             display: inline-block;
-            color: #f26222;
+            text-align: center;
+            background-color: #f26222;
+            color: white;
             text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 6px;
             font-weight: bold;
             font-size: 0.95rem;
+            transition: background 0.2s;
         }
-        .service-card a.app-link {
-            color: #1f4037;
+        .btn:hover {
+            background-color: #d94f14;
+        }
+        .btn.app-btn {
+            background-color: #1e3a1e;
+        }
+        .btn.app-btn:hover {
+            background-color: #122412;
         }
         footer {
             padding: 30px 20px;
             text-align: center;
             font-size: 0.85rem;
-            color: #6a737d;
-            border-top: 1px solid #e1e4e8;
-            margin-top: 60px;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
+            background: #ffffff;
+            margin-top: 40px;
         }
     </style>
 </head>
 <body>
 
-    <div class="main-content">
+    <header>
         <h1>Fylde Studios</h1>
         <p class="subtitle">Handcrafted Art, Custom Prints & Hobby App Projects</p>
-        
+    </header>
+
+    <div class="main-content">
         <div class="bio-text">
-            <p>📍 Based in Blackpool, England.</p>
-            <p>In my spare time, I make hand-carved, hand-painted wooden wall plaques and custom signs. I also create custom, hand-drawn style portraits from your photographs—turning your favorite shots of pets, cars, houses, or family into personalized prints ranging from standard A4 sizes up to massive A0 wall art posters.</p>
-            <p>When I'm not working with wood or teaching myself code, I am a full-time carer for my wife and a dad to my two daughters, and I am also in adult college learning Plumbing.</p>
+            <p class="location">📍 Based in Blackpool, England.</p>
+            <p>In my spare time, I make hand-carved and painted wooden  plaques and custom signs. I also create custom, hand-drawn style portraits from your photographs—turning your favorite shots of pets, cars, houses, or family into personalized prints ranging from standard A4 sizes up to massive A0 wall art posters.</p>
+            <p class="highlight-text">I am a full-time carer and I am also in adult college learning Plumbing.</p>
         </div>
 
         <div class="services-grid">
             <div class="service-card">
                 <div>
                     <h3>Handcrafted Art</h3>
-                    <p>Check out my active Etsy store to browse some of my physical carvings and custom design prints!</p>
+                    <p>Check out my Etsy page to browse some of my items!</p>
                 </div>
-                <a href="https://fyldestudios.etsy.com" target="_blank">Visit My Etsy Shop &rarr;</a>
+                <a href="https://etsy.com" target="_blank" class="btn">Visit My Etsy Shop &rarr;</a>
             </div>
             
             <div class="service-card">
@@ -139,13 +157,13 @@
                     <h3>Mobile Apps</h3>
                     <p>Take a look at the mobile apps I am currently building.</p>
                 </div>
-                <a href="apps" class="app-link">View My Projects &rarr;</a>
+                <a href="apps" class="btn app-btn">View My Projects &rarr;</a>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Fylde Studios.</p>
+        <p>&copy; 2026 Fylde Studios. Built cleanly with GitHub Pages.</p>
     </footer>
 
 </body>
