@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fylde Studios | Internal App Projects</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            background-color: #f8fafc;
+            color: #1e293b;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            background: linear-gradient(135deg, #1e3a1e, #112211);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 4px solid #4caf50;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight: 800;
+        }
+        header p {
+            margin: 6px 0 0 0;
+            color: #94a3b8;
+            font-size: 1.05rem;
+        }
+        .main-content {
+            flex: 1;
+            max-width: 650px;
+            margin: 40px auto;
+            padding: 0 20px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .back-home {
+            display: inline-block;
+            margin-bottom: 25px;
+            color: #2e7d32;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+        }
+        .back-home:hover {
+            text-decoration: underline;
+        }
+        .app-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        .app-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            border: 1px solid #e2e8f0;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            transition: transform 0.2s, border-color 0.2s;
+        }
+        .app-card:hover {
+            transform: translateY(-2px);
+            border-color: #4caf50;
+        }
+        .app-card h3 {
+            margin: 0;
+            color: #1e3a1e;
+            font-size: 1.3rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .app-card p {
+            font-size: 1rem;
+            color: #475569;
+            line-height: 1.6;
+            margin: 10px 0 0 0;
+        }
+        .status-tag {
+            font-size: 0.8rem;
+            padding: 3px 10px;
+            border-radius: 20px;
+            font-weight: bold;
+            color: white;
+            margin-left: auto;
+        }
+        .status-diary { background-color: #2e7d32; }
+        .status-pet { background-color: #db7093; }
+        .status-med { background-color: #4682b4; }
+        footer {
+            padding: 30px 20px;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #64748b;
+            border-top: 1px solid #e2e8f0;
+            background: #ffffff;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Independent App Projects</h1>
+        <p>Development tracks and testing builds for hobby applications</p>
+    </header>
+
+    <div class="main-content">
+        <a href="/" class="back-home">&larr; Back to Main Site</a>
+
+        <div class="app-list">
+            <a href="medical-cannabis-cup-diary" class="app-card">
+                <h3>
+                    📱 Medical Cannabis Cup Diary
+                    <span class="status-tag status-diary">90% Done</span>
+                </h3>
+                <p>Standalone patient logging journal, strain breakdown tools, and community-driven leaderboard cups.</p>
+            </a>
+
+            <a href="rate-a-pet" class="app-card">
+                <h3>
+                    🐾 Rate My Pet
+                    <span class="status-tag status-pet">In Progress</span>
+                </h3>
+                <p>A fun community project designed to upload pet photos, vote across media layouts, and climb scoring ladders.</p>
+            </a>
+
+            <a href="medtrackerpro" class="app-card">
+                <h3>
+                    💊 Med Tracker Pro
+                    <span class="status-tag status-med">Private Beta</span>
+                </h3>
+                <p>An offline-first, locally encrypted schedule planner built to safely map out daily prescription compliance routines.</p>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Fylde Studios.</p>
+    </footer>
+
+</body>
+</html>
