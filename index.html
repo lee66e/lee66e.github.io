@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fylde Studios | Design & App Development</title>
+    <title>Fylde Studios | Handcrafted Art & Hobby Apps</title>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
@@ -17,7 +17,7 @@
         .main-content {
             flex: 1;
             max-width: 650px;
-            margin: 80px auto;
+            margin: 60px auto;
             padding: 0 20px;
             text-align: center;
         }
@@ -33,18 +33,39 @@
             margin-top: 0;
             margin-bottom: 35px;
         }
+        .bio-text {
+            text-align: left;
+            margin-bottom: 40px;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #e1e4e8;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+        }
         p {
             line-height: 1.7;
             font-size: 1.1rem;
             color: #2f363d;
-            text-align: left;
+            margin: 14px 0;
+        }
+        p:first-child {
+            margin-top: 0;
+            font-weight: 600;
+            color: #1f4037;
+        }
+        p:last-child {
+            margin-bottom: 0;
+            border-top: 1px solid #f0f2f5;
+            padding-top: 14px;
+            font-style: italic;
+            color: #586069;
         }
         .services-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 20px;
-            margin-top: 40px;
             text-align: left;
+            margin-top: 30px;
         }
         .service-card {
             background: white;
@@ -52,20 +73,28 @@
             padding: 25px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.03);
             border: 1px solid #e1e4e8;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .service-card h3 {
             margin-top: 0;
             color: #1f4037;
-            font-size: 1.25rem;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
         }
         .service-card p {
             font-size: 0.95rem;
-            margin-bottom: 0;
-            line-height: 1.5;
+            color: #586069;
+            line-height: 1.6;
+            margin: 0 0 15px 0;
+            font-weight: normal;
+            font-style: normal;
+            border: none;
+            padding: 0;
         }
         .service-card a {
             display: inline-block;
-            margin-top: 15px;
             color: #f26222;
             text-decoration: none;
             font-weight: bold;
@@ -75,11 +104,12 @@
             color: #1f4037;
         }
         footer {
-            padding: 40px 20px;
+            padding: 30px 20px;
             text-align: center;
             font-size: 0.85rem;
             color: #6a737d;
             border-top: 1px solid #e1e4e8;
+            margin-top: 60px;
         }
     </style>
 </head>
@@ -87,27 +117,35 @@
 
     <div class="main-content">
         <h1>Fylde Studios</h1>
-        <p class="subtitle">Digital Product Design & Software Development</p>
+        <p class="subtitle">Handcrafted Art, Custom Prints & Hobby App Projects</p>
         
-        <p>Based in Blackpool, UK, Fylde Studios is an independent multi-disciplinary creative lab. We specialize in engineering functional, privacy-focused mobile utilities alongside crafting bespoke digital design assets and illustration commissions.</p>
+        <div class="bio-text">
+            <p>📍 Based in Blackpool, England.</p>
+            <p>In my spare time, I make hand-carved, hand-painted wooden wall plaques and custom signs. I also create custom, hand-drawn style portraits from your photographs—turning your favorite shots of pets, cars, houses, or family into personalized prints ranging from standard A4 sizes up to massive A0 wall art posters.</p>
+            <p>When I'm not working with wood or teaching myself code, I am a full-time carer for my wife and a dad to my two daughters, and I am also in adult college learning Plumbing.</p>
+        </div>
 
         <div class="services-grid">
             <div class="service-card">
-                <h3>Bespoke Illustration</h3>
-                <p>Custom portraiture, graphics, and physical art commissions processed securely via our independent commerce channel.</p>
-                <a href="https://etsy.com" target="_blank">Visit Art Shop &rarr;</a>
+                <div>
+                    <h3>Handcrafted Art</h3>
+                    <p>Check out my active Etsy store to browse some of my physical carvings and custom design prints!</p>
+                </div>
+                <a href="https://fyldestudios.etsy.com" target="_blank">Visit My Etsy Shop &rarr;</a>
             </div>
             
             <div class="service-card">
-                <h3>Software Engineering</h3>
-                <p>Building high-performance, containerized mobile platforms, patient tracking diaries, and global community portals.</p>
-                <a href="apps" class="app-link">View App Portfolio &rarr;</a>
+                <div>
+                    <h3>Mobile Apps</h3>
+                    <p>Take a look at the mobile apps I am currently building.</p>
+                </div>
+                <a href="apps" class="app-link">View My Projects &rarr;</a>
             </div>
         </div>
     </div>
 
     <footer>
-        <p>&copy; 2026 Fylde Studios. All rights reserved.</p>
+        <p>&copy; 2026 Fylde Studios.</p>
     </footer>
 
 </body>
